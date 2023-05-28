@@ -23,9 +23,9 @@
         const timetakenbyall = allEndTime - startTime;
         const tdall = document.getElementById('output-all');
         tdall.innerText = timetakenbyall;
-        console.log("Promise.all - Time taken:", timetakenbyall, "ms");
+       
       } catch (error) {
-        console.error("Promise.all - Error:", error);
+        console.error(error);
       }
 
       try {
@@ -34,9 +34,9 @@
         const timetakenbyany = anyEndTime - startTime;
         const tdany = document.getElementById('output-any');
         tdany.innerText = timetakenbyany;
-        console.log("Promise.any - Time taken:", timetakenbyany, "ms");
+       
       } catch (error) {
-        console.error("Promise.any - Error:", error);
+        console.error(error);
       }
     }
 
